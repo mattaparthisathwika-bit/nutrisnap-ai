@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "NutriSnap AI",
+    "slug": "nutrisnap-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0a0a0a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.nutrisnap",
+      "infoPlist": {
+        "NSCameraUsageDescription": "NutriSnap uses your camera to photograph food for AI calorie analysis.",
+        "NSPhotoLibraryUsageDescription": "NutriSnap accesses your photos to analyze food for calorie tracking."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0a0a"
+      },
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"],
+      "package": "com.yourname.nutrisnap"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NutriSnap accesses your photos to analyze food."
+        }
+      ]
+    ],
+    "scheme": "nutrisnap"
+  }
+}
